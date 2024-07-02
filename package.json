@@ -1,0 +1,15 @@
+{
+  "name": "mini-projeto-geracao-tech",
+  "version": "1.0.0",
+  "description": "Atividade construção de um todo-list.",
+  "main": "index.js",
+  "scripts": {
+    "api": "npx json-server api.json --watch --port 9876"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

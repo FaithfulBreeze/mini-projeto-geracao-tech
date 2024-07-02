@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <input type="text" onkeyup="pesquisarTarefa()" id="busca" placeholder="Pesquisar por título">
+    </header>
+    <main>
+        <section id="tarefas">
+            <h2>Tarefas <button onclick="abrirModal()">Nova tarefa</button></h2>
+            <h6 id="tarefasPlaceholder"></h6>
+            <ul id="listaDeTarefas">
+            </ul>
+        </section>
+        <section id="overlay" onclick="fecharModal()"></section>
+        <div id="criarTarefa" class="modal">
+            <form>
+                <h3>Criar Tarefa <box-icon onclick="fecharModal()" name="x" size="md"></box-icon> </h3>
+                <label for="titulo">Titulo</label>
+                <input required type="text" id="titulo">
+                <label for="descricao">Descrição</label>
+                <textarea required id="descricao"></textarea>
+                <button onclick="novaTarefa()">Criar Tarefa</button>
+            </form>
+        </div>
+    </main>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
