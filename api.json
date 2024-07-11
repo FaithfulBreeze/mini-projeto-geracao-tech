@@ -1,9 +1,3 @@
 {
-  "tarefas": [
-    {
-      "titulo": "Concluir a Todo-List task",
-      "desc": "Concluir a atividade do curso!",
-      "id": 1
-    }
-  ]
+  "tarefas": []
 }
